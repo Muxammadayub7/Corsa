@@ -237,6 +237,10 @@
 .cards__line {
 	border: 5px solid #229cdc33;
 	border-radius: 25px;
+	max-width: 360px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .card__row {
@@ -472,28 +476,25 @@
 .help {
 	padding-top: 32px;
 	padding-bottom: 21px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .help__container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 16px 22px;
-  border-radius: 30px;
-  text-align: center;
-  color: #fff; /* Matn oq bo'lishi uchun */
-
-  /* MUHIM: Rasm har doim birinchi, gradient ikkinchi yoziladi! */
-  background-image: url("../images/wrapper/wrapper__img.svg"), 
-                    linear-gradient(180deg, #229cdc 0%, #61c9ff 100%);
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 16px 22px;
+	border-radius: 30px;
+	text-align: center;
+	color: white;
+	background:
+		url('../images/wrapper/wrapper__img.svg') no-repeat center / cover,
+		linear-gradient(180deg, #229cdc 0%, #61c9ff 100%) !important;
 }
 .help__text {
 	font-family: Helvetica;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: clamp(15px, 4vw, 18px);
 	line-height: 140%;
 	text-align: center;
 	color: #ffffff;
@@ -523,4 +524,167 @@
 		0px 10px 20px 0px rgba(236, 44, 43, 0.5);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.benefit {
+	padding-top: 21px;
+	padding-bottom: 28px;
+}
+.benefit__container {
+	background:
+		url('../images/wrapper/wrapper__img.svg') no-repeat center / cover,
+		linear-gradient(180deg, #229cdc 0%, #61c9ff 100%) !important;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	padding: 24px 10px;
+}
+.benefit__title {
+	font-family: Buyan;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 110.00000000000001%;
+	text-align: center;
+	color: white;
+	margin-bottom: 16px;
+}
+.benefit__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.benefit__row {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	margin-bottom: 24px;
+	max-width: 263px;
+	width: 100%;
+	border-radius: 30px;
+}
+.benefit__col {
+	position: relative;
+}
+.benefit__img {
+	margin-top: -10px;
+}
+.ticket__red {
+	background-color: #ec2c2b;
+	padding: 7px 5px 7px 6px;
+	border-radius: 50px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	right: 130px;
+	bottom: 8px;
+}
+.benefit__row__text {
+	font-family: Onest;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	padding: 8px 16px 16px 15px;
+}
+.ticket__blue {
+	background-color: #549dfb;
+	padding: 7px 5px 7px 6px;
+	border-radius: 50px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	right: 130px;
+	bottom: 8px;
+}
+.benefit__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 327px;
+	width: 100%;
+	padding: 26px 0;
+	background-color: #ef1c1c;
+	color: white;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Buyan', sans-serif;
+	font-weight: 700;
+	font-size: clamp(22px, 4vw, 26px);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	box-shadow:
+		0px 6px 0px 0px #ca1211,
+		inset 0px 4px 4px 0px rgba(255, 255, 255, 0.4),
+		inset 0px -4px 4px 0px rgba(255, 255, 255, 0.4),
+		0px 10px 20px 0px rgba(236, 44, 43, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	padding-top: 42px;
+}
+.footer__container {
+	background-color: #202020;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 18px 0 24px 0;
+	border-top-left-radius: 90px;
+	border-top-right-radius: 90px;
+}
+.container {
+}
+.footer__img {
+	margin-bottom: 32px;
+}
+.footer__text {
+	font-family: Onest;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 8px;
+}
+.footer__span {
+	font-family: Onest;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+.footer__text__manzil {
+	font-family: Onest;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 100%;
+	text-align: center;
+	color: white;
+	margin-bottom: 4px;
+}
+.footer__locat {
+	font-family: Onest;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 16px;
+}
+.footer__links {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.footer__link {
+	padding: 6px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
